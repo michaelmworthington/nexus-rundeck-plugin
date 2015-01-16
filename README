@@ -28,7 +28,7 @@ The plugin provides the following new HTTP resources :
 Note that if you want to retrieve the artifact from your RunDeck script, you should use Nexus REST API : https://docs.sonatype.com/display/SPRTNXOSS/Nexus+FAQ#NexusFAQ-Q.HowcanIretrieveasnapshotifIdon%27tknowtheexactfilename%3F 
 
 Change Log
-- Version 2.11.1-01 : Compatibility for Nexus 2.11
+- Version 2.11.1-01 : Compatibility for Nexus 2.11 
 - Version 2.7.2 : with a dependency on Nexus 2.7.2 (instead of 2.8.0), reverted changes to JSON response for version option provider
 - Version 1.2.2.2 : re-release 1.2, but with a dependence on Nexus 1.9.2.2 (instead of Nexus 1.9)
 - Version 1.2 : the option provider for version now includes the date of the version (release)
