@@ -7,15 +7,18 @@ This is a Nexus plugin that provides an Option provider for RunDeck.
 # Required
 * Sanotype Nexus: v2.11.1-01 (Plugin has only tested with this version)
 * Rundeck: v2.4.0-1
-* Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
+* Download Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
 
 # How to
-On Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
+## Nexus
+In my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
 
 1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: ```/YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/```
 2. Restart your Nexus.
 3. Login to your Nexus and go the menu "Administrator -> Plugin Console" like bellow:
-ajouter image
+
+![Home of nexus-rundeck-plugin](images/Capture d’écran 2015-01-29 à 15.06.14 (2)-2.png)
+
 4. Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
 5. Now, test if you receive a JSON file enter the URL like below:
 ```
@@ -35,8 +38,7 @@ If you already deploy some snapshot version of your project on your Nexus app yo
 {"name":"1.0-SNAPSHOT (2015-01-14T17:18:39)","value":"1.0-SNAPSHOT"}]
 ```
 
-On Rundeck
-
+## Rundeck
 
 1. Edit your job 
 2. In the "Options" part click on "Add an option" like below:
