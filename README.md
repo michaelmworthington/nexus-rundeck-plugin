@@ -15,9 +15,9 @@ On the Nexus application, in my case I use a docker "sonatype/nexus" image, more
 1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: /YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/.
 2. Restart your Nexus.
 3. Login to your Nexus and go the menu "Administrator -> Plugin Console" like bellow:
-
-4 - Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
-5 - Now, test if you receive a JSON file enter the URL like below:
+ajouter image
+4. Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
+5. Now, test if you receive a JSON file enter the URL like below:
 http://mynexus/service/local/rundeck/options/version?r=snapshots&g=com.compagny&a=myproject
 Nexus App hostname: mynexus
 Repository: snapshots
@@ -25,12 +25,15 @@ GroupId: com.compagny
 Project: myproject
 
 If you already deploy some snapshot version of your project on your Nexus app you will have a JSON like below:
+```
 [{"name":"1.0.3-SNAPSHOT (2015-01-23T15:45:41)","value":"1.0.3-SNAPSHOT"},{"name":"1.0.2-SNAPSHOT (2015-01-23T15:29:17)","value":"1.0.2-SNAPSHOT"},{"name":"1.0.1-SNAPSHOT (2015-01-21T11:15:12)","value":"1.0.1-SNAPSHOT"},{"name":"1.0-SNAPSHOT (2015-01-14T17:18:39)","value":"1.0-SNAPSHOT"}]
-6 - OK, everything work, now we go to configure the Rundeck job.
+```
 
-On my Rundeck v2.4.0-1 app (same I use a docker):
-1 - Edit your job 
-2 - In the "Options" part click on "Add an option" like below:
+6. OK, everything work, now we go to configure the Rundeck job.
+
+On Rundeck (same I use a docker):
+1. Edit your job 
+2. In the "Options" part click on "Add an option" like below:
 Images intégrées 4
 
 
