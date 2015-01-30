@@ -91,7 +91,7 @@ Note that if you want to retrieve the artifact from your RunDeck script, you sho
 * Version 1.0 : option provider for version. compatible with Nexus 1.9 and RunDeck 1.1
 
 # Help
-Google Group: rundeck-discuss@googlegroups.com
+Google Group: https://groups.google.com/forum/#!forum/rundeck-discuss
 
 # Resources
 - Nexus : http://nexus.sonatype.org
