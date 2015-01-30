@@ -10,7 +10,7 @@ This is a Nexus plugin that provides an Option provider for RunDeck.
 * Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
 
 # How to
-On the Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
+On Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
 
 1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: ```/YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/```
 2. Restart your Nexus.
@@ -35,7 +35,7 @@ If you already deploy some snapshot version of your project on your Nexus app yo
 {"name":"1.0-SNAPSHOT (2015-01-14T17:18:39)","value":"1.0-SNAPSHOT"}]
 ```
 
-On Rundeck (same I use a docker)
+On Rundeck
 
 
 1. Edit your job 
