@@ -2,22 +2,18 @@ Nexus-rundeck-plugin
 ========
 Nexus RunDeck plugin
 https://github.com/moifort/nexus-rundeck-plugin
-This is a Nexus plugin that provides an "Option provider" for RunDeck.
+This is a Nexus plugin that provides an Option provider for RunDeck.
 
 # Required
+Sanotype Nexus: v2.11.1-01 (Plugin has only tested with this version)
+Rundeck: v2.4.0-1
+Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
 
------------> How to install <-----------
+# How to
+On the Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
 
-Required:
-My version of Sanotype Nexus: 2.11.1-01 (you need to have this version for the plugin)
-My version of Rundeck: 2.4.0-1
-The plugin (I copied from my nexus) attached.
-
-How to:
-On my Nexus application v2.11.1-01 (In my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/)
-
-1 - Put the folder rundeck-nexus-plugin-2.11.1-01 (Download from https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip) in the folder plugin-repository/ of your Nexus app (or directly /sonatype-work/plugin-repository/ in my case). Your folder must be like (in my case): /sonatype-work/plugin-repository/rundeck-nexus-plugin-2.11.1-01/
-2 - Restart your Nexus app
+1.  Put the folder rundeck-nexus-plugin-2.11.1-01 (Download from https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip) in the folder plugin-repository/ of your Nexus app (or directly /sonatype-work/plugin-repository/ in my case). Your folder must be like (in my case): /sonatype-work/plugin-repository/rundeck-nexus-plugin-2.11.1-01/
+2. Restart your Nexus app
 3 - Login to your Nexus app and go the menu "Administrator/Plugin Console" like bellow:
 Images intégrées 2
 4 - Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
