@@ -48,6 +48,8 @@ If you already deploy some snapshot version of your project on your Nexus you wi
 
 # Usage
 The plugin provides the following new HTTP resources:
+
+## Version
 ```
 http://NEXUS_HOST/service/local/rundeck/options/version 
 return a json array with the version of the matching artifacts.
@@ -63,6 +65,8 @@ Parameters (all optional) :
   * includeRelease : if "true", will include the special "RELEASE" version before all versions
   * optional : if "true", will include an empty option before all versions
 
+
+## Artifact Id
 ```
 http://NEXUS_HOST/service/local/rundeck/options/artifactId
 return a json array with the artifactId of the matching artifacts.
@@ -93,9 +97,6 @@ Google Group: rundeck-discuss+unsubscribe@googlegroups.com
 - Nexus : http://nexus.sonatype.org
 - RunDeck : http://www.rundeck.org
 - Maven : http://maven.apache.org/
-- JDK 7 : http://www.oracle.com/technetwork/java/javase/overview/index.html 
-- RunDeck "Option Model Provider" : http://rundeck.org/docs/RunDeck-Guide.html#option-model-provider
-- RunDeck mailing-list (for questions/feedback/etc) : http://groups.google.com/group/rundeck-discuss
 
 # License
 The Apache Software License, Version 2.0
