@@ -1,3 +1,53 @@
+Photolio
+========
+
+A simple portfolio for photograph. This website is compatible with smartphone, tablet and computer screen.
+
+# Feature
+- Compatible with smartphone, tablet, computer size screen
+- Automatic creation of thumbnails (faster loading)
+- Picture outside of the visible part of web page wont be loaded before user scrolls to them (faster loading)
+- Display exif information (camera, lens, focal length, aperture, speed, ISO)
+- Display exif information when mouse over the photo
+- Zoom on the original picture size without changing page
+- Auto generate menu (folder name)
+
+# Installation
+- Need Apache and PHP
+- In PHP configuration file you need to enable exif lib (search the key word exif in the PHP conf file)
+- Copy the folder on your web page appache directory
+- Change permission for directory /photos and /thumbs
+- Go to www.yourservername.com/Photolio/
+- Put your informations on the config.php file
+- (Optionnal) you can put your google analytics script on analyticstracking.php file
+- If you have some error report to the Troubleshooting part
+
+# How to use it
+- To create a new album, just create a folder in /photos and put your picture on it
+- Be careful, you can't use special character like ?, $, &, @ etc. on the name of the folder, use only alphabetical and numerical character
+- Put only jpg pictures and resize picture max 1024px (faster loading)
+
+# Troubleshooting
+- Sometimes the lib GD is not installed on the webserver, so you need to install or enable it on Apache
+- If you have some problem with thumbnails, delete all the picture in the folder thumbs
+- If you have lot of pictures, the first view on the album page can take long time to load, it's normal because the process of thumbnails creation run
+- If the tumbnails creation take too much time (more than 30 second), PHP stop the process, so you need to change the time in the conf file of PHP (default 30s)
+- You can't use special character like ?, $, &, @ etc. on the album folder, use only alphabetical and numerical character
+
+# Screenshots 
+##Computer Screen
+![Home of Photolio](readme/Computer Screen - Home.png)
+![Home of Photolio](readme/Computer Screen - Album.png)
+![Home of Photolio](readme/Computer Screen - Zoom Album.png)
+
+##Smartphone Screen
+![Home of Photolio](readme/Smartphone Screen - Home.png)
+![Home of Photolio](readme/Smartphone Screen - Album.png)
+![Home of Photolio](readme/Smartphone Screen - Zoom Album.png)
+
+
+
+
 Nexus RunDeck plugin
 https://github.com/moifort/nexus-rundeck-plugin
 
