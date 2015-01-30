@@ -36,21 +36,14 @@ If you already deploy some snapshot version of your project on your Nexus app yo
 ```
 
 On Rundeck (same I use a docker)
+
+
 1. Edit your job 
 2. In the "Options" part click on "Add an option" like below:
-Images intégrées 4
-
-
 3. Edit your option like below (Change in red): In the remote URL you put your URL we test before
-Images intégrées 5
-
-
 4.  Save your job and know you have this, you can select your version you want to deploy:
-Images intégrées 6
 
-
-
-Usage
+# Usage
 The plugin provides the following new HTTP resources :
 - http://NEXUS_HOST/service/local/rundeck/options/version : return a json array with the version of the matching artifacts.
   Parameters (all optional) :
