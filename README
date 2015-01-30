@@ -5,10 +5,43 @@ This is a Nexus plugin that provides an "Option provider" for RunDeck.
 
 
 -----------> How to install <-----------
-- Download from https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
-- Unzip the "nexus-rundeck-plugin-2.11.1-01-bundle.zip" file into the "plugin-repository" directory (located in "$NEXUS_HOME/sonatype-work/nexus/plugin-repository")
-  You should have a "nexus-rundeck-plugin-2.11.1-01" directory with a "nexus-rundeck-plugin-2.11.1-01.jar" file inside it
-- Then, you just need to restart Nexus.
+
+Required:
+My version of Sanotype Nexus: 2.11.1-01 (you need to have this version for the plugin)
+My version of Rundeck: 2.4.0-1
+The plugin (I copied from my nexus) attached.
+
+How to:
+On my Nexus application v2.11.1-01 (In my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/)
+
+1 - Put the folder rundeck-nexus-plugin-2.11.1-01 (Download from https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip) in the folder plugin-repository/ of your Nexus app (or directly /sonatype-work/plugin-repository/ in my case). Your folder must be like (in my case): /sonatype-work/plugin-repository/rundeck-nexus-plugin-2.11.1-01/
+2 - Restart your Nexus app
+3 - Login to your Nexus app and go the menu "Administrator/Plugin Console" like bellow:
+Images intégrées 2
+4 - Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
+5 - Now, test if you receive a JSON file enter the URL like below:
+http://mynexus/service/local/rundeck/options/version?r=snapshots&g=com.compagny&a=myproject
+Nexus App hostname: mynexus
+Repository: snapshots
+GroupId: com.compagny
+Project: myproject
+
+If you already deploy some snapshot version of your project on your Nexus app you will have a JSON like below:
+[{"name":"1.0.3-SNAPSHOT (2015-01-23T15:45:41)","value":"1.0.3-SNAPSHOT"},{"name":"1.0.2-SNAPSHOT (2015-01-23T15:29:17)","value":"1.0.2-SNAPSHOT"},{"name":"1.0.1-SNAPSHOT (2015-01-21T11:15:12)","value":"1.0.1-SNAPSHOT"},{"name":"1.0-SNAPSHOT (2015-01-14T17:18:39)","value":"1.0-SNAPSHOT"}]
+6 - OK, everything work, now we go to configure the Rundeck job.
+
+On my Rundeck v2.4.0-1 app (same I use a docker):
+1 - Edit your job 
+2 - In the "Options" part click on "Add an option" like below:
+Images intégrées 4
+
+
+3 - Edit your option like below (Change in red): In the remote URL you put your URL we test before
+Images intégrées 5
+
+
+4 - Save your job and know you have this, you can select your version you want to deploy:
+Images intégrées 6
 
 
 
