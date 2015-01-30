@@ -12,7 +12,7 @@ This is a Nexus plugin that provides an Option provider for RunDeck.
 # How to
 On the Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
 
-1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: /YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/.
+1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: ```/YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/.```
 2. Restart your Nexus.
 3. Login to your Nexus and go the menu "Administrator -> Plugin Console" like bellow:
 ajouter image
