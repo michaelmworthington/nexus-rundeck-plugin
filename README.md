@@ -5,9 +5,9 @@ https://github.com/moifort/nexus-rundeck-plugin
 This is a Nexus plugin that provides an Option provider for RunDeck.
 
 # Required
-Sanotype Nexus: v2.11.1-01 (Plugin has only tested with this version)
-Rundeck: v2.4.0-1
-Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
+* Sanotype Nexus: v2.11.1-01 (Plugin has only tested with this version)
+* Rundeck: v2.4.0-1
+* Nexus-rundeck-plugin: https://github.com/moifort/nexus-rundeck-plugin/releases/download/2.11.1-01/rundeck-nexus-plugin-2.11.1-01-bundle.zip
 
 # How to
 On the Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
