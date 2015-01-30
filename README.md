@@ -15,7 +15,7 @@ On the Nexus application, in my case I use a docker "sonatype/nexus" image, more
 1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: /YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/.
 2. Restart your Nexus.
 3. Login to your Nexus and go the menu "Administrator -> Plugin Console" like bellow:
-Images intégrées 2
+
 4 - Normally you will have the rundeck plugin with the status: "activated", if it doesn't work it's status: "Broken" (it's not good)
 5 - Now, test if you receive a JSON file enter the URL like below:
 http://mynexus/service/local/rundeck/options/version?r=snapshots&g=com.compagny&a=myproject
