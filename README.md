@@ -40,10 +40,13 @@ If you already deploy some snapshot version of your project on your Nexus app yo
 
 ## Rundeck
 
-1. Edit your job 
+1. Edit your job.
 2. In the "Options" part click on "Add an option" like below:
-3. Edit your option like below (Change in red): In the remote URL you put your URL we test before
-4.  Save your job and know you have this, you can select your version you want to deploy:
+![Home of nexus-rundeck-plugin](images/Capture d’écran 2015-01-29 à 15.13.19 (2)-2.png)
+3. Edit your option like below (Change in red): In the remote URL you put your URL we test before.
+![Home of nexus-rundeck-plugin](images/Capture d’écran 2015-01-29 à 15.28.13 (2)-2.png)
+4. Save your job and know you have this, you can select your version you want to deploy:
+![Home of nexus-rundeck-plugin](images/Capture d’écran 2015-01-29 à 15.03.07 (2)-2.png)
 
 # Usage
 The plugin provides the following new HTTP resources :
