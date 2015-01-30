@@ -12,7 +12,7 @@ This is a Nexus plugin that provides an Option provider for RunDeck.
 # How to
 On the Nexus application, in my case I use a docker "sonatype/nexus" image, more information here: https://registry.hub.docker.com/u/sonatype/nexus/.
 
-1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: ```/YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/.```
+1. Put the folder rundeck-nexus-plugin-2.11.1-01 in the plugin Nexus folder. Your folder must be like: ```/YourNexusAppFolder/plugin-repository/rundeck-nexus-plugin-2.11.1-01/```
 2. Restart your Nexus.
 3. Login to your Nexus and go the menu "Administrator -> Plugin Console" like bellow:
 ajouter image
@@ -20,7 +20,8 @@ ajouter image
 5. Now, test if you receive a JSON file enter the URL like below:
 ```
 http://mynexus/service/local/rundeck/options/version?r=snapshots&g=com.compagny&a=myproject
-Nexus App hostname: mynexus
+
+Nexus hostname: mynexus
 Repository: snapshots
 GroupId: com.compagny
 Project: myproject
@@ -34,18 +35,17 @@ If you already deploy some snapshot version of your project on your Nexus app yo
 {"name":"1.0-SNAPSHOT (2015-01-14T17:18:39)","value":"1.0-SNAPSHOT"}]
 ```
 
-
-On Rundeck (same I use a docker):
+On Rundeck (same I use a docker)
 1. Edit your job 
 2. In the "Options" part click on "Add an option" like below:
 Images intégrées 4
 
 
-3 - Edit your option like below (Change in red): In the remote URL you put your URL we test before
+3. Edit your option like below (Change in red): In the remote URL you put your URL we test before
 Images intégrées 5
 
 
-4 - Save your job and know you have this, you can select your version you want to deploy:
+4.  Save your job and know you have this, you can select your version you want to deploy:
 Images intégrées 6
 
 
