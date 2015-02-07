@@ -2,7 +2,7 @@ Nexus-rundeck-plugin
 ========
 Nexus RunDeck plugin is a Nexus plugin that provides an Option provider for RunDeck.  
 * Github Project: https://github.com/moifort/nexus-rundeck-plugin  
-* Nexus Tuto: http://blog.mottet.tk/Nexus-rundeck-plugin  
+* Tuto: http://blog.mottet.tk/Nexus-rundeck-plugin  
 * My Blog: http://blog.mottet.tk
 
 # Required
