@@ -1,8 +1,8 @@
 Nexus-rundeck-plugin
 ========
-Nexus RunDeck plugin
-https://github.com/moifort/nexus-rundeck-plugin
-http://blog.mottet.tk/Nexus-rundeck-plugin
+Nexus RunDeck plugin  
+https://github.com/moifort/nexus-rundeck-plugin  
+http://blog.mottet.tk/Nexus-rundeck-plugin  
 This is a Nexus plugin that provides an Option provider for RunDeck. You will find more projects on my blog: http://blog.mottet.tk
 
 # Required
