@@ -15,6 +15,7 @@
  */
 package org.sonatype.nexus.plugins.rundeck;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -90,6 +91,12 @@ public class ArtifactIdOptionProvider extends AbstractOptionProvider {
         // optionally include a blank value
         if (Boolean.parseBoolean(form.getFirstValue("optional", null))) {
             artifactIds.add(0, "");
+        }
+
+        try {
+            searchResponse.close();
+        } catch (IOException e) {
+            getLogger().error("could not close search response: ", e);
         }
 
         return artifactIds;

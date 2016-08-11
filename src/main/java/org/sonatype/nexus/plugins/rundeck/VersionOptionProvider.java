@@ -15,6 +15,7 @@
  */
 package org.sonatype.nexus.plugins.rundeck;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -106,6 +107,12 @@ public class VersionOptionProvider extends AbstractOptionProvider {
 		int limit = NumberUtils.toInt(form.getFirstValue("l", null), 0);
 		if (limit > 0 && versions.size() > limit) {
 			versions = new ArrayList<Option>(versions.subList(0, limit));
+		}
+
+		try {
+			searchResponse.close();
+		} catch (IOException e) {
+			getLogger().error("could not close search response: ", e);
 		}
 
 		return versions;
